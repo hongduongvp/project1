@@ -1,0 +1,797 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+@font-face {
+	font-family: 'OptimaBI';
+	src: url('../fonts/web/Optima-LT-Std-Black-Italic.eot');
+	src: url('../fonts/web/Optima-LT-Std-Black-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/web/Optima-LT-Std-Black-Italic.woff2') format('woff2'), url('../fonts/web/Optima-LT-Std-Black-Italic.woff') format('woff'), url('../fonts/web/Optima-LT-Std-Black-Italic.ttf') format('truetype'), url('../fonts/web/Optima-LT-Std-Black-Italic.svg#OptimaBI') format('svg');
+}
+
+@font-face {
+	font-family: 'Optima';
+	src: url('../fonts/web/Optima.eot');
+	src: url('../fonts/web/Optima.eot?#iefix') format('embedded-opentype'), url('../fonts/web/Optima.woff') format('woff'), url('../fonts/web/Optima.ttf') format('truetype'), url('../fonts/web/Optima.svg#OptimaBI') format('svg');
+}
+
+@font-face {
+	font-family: 'WolfsburgR';
+	src: url('../fonts/web/Wolfsburg-Regular.eot');
+	src: url('../fonts/web/Wolfsburg-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/web/Wolfsburg-Regular.woff') format('woff'), url('../fonts/web/Wolfsburg-Regular.ttf') format('truetype'), url('../fonts/web/Wolfsburg-Regular.svg#WolfsburgR') format('svg');
+}
+
+body {
+	line-height: 20px; font-family: 'Optima', sans-serif; font-size: 14px; font-weight: 400; background: #000 none;
+}
+
+img {
+	width: auto; height: auto; max-width: 100%;
+}
+
+a:focus, a:hover {
+	outline: none; text-decoration: none;
+}
+
+.container {
+	padding-left: 0; padding-right: 0; position: relative;
+}
+
+.qs-header-wrapper {
+	background: #000 none; position: relative; height: 166px; transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.qs-header-wrapper.fixed {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 99; height: 86px;
+}
+
+.qs-header-bar {
+	padding: 12px 0 0; transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.qs-header-wrapper.fixed .qs-header-bar {
+    padding: 15px 0;
+}
+
+.qs-logo {
+	text-align: center; margin: 0 0 15px; transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.qs-header-wrapper.fixed .qs-logo {
+    display: inline-block; float: left; margin: 0 50px 0 0;
+}
+
+.qs-logo a {
+	display: inline-block; line-height: 0;
+}
+
+.qs-logo-scroll, .qs-header-wrapper.fixed .qs-logo-noscroll {
+    display: none;
+}
+
+.qs-header-wrapper.fixed .qs-logo-scroll {
+    display: inline;
+}
+
+.qs-nav-wrapper {
+	text-align: center;
+}
+
+.qs-header-wrapper.fixed .qs-nav-wrapper {
+    display: inline-block; float: left;
+}
+
+.qs-nav-wrapper ul {
+	margin: 0; padding: 0; list-style: none; display: inline-block;
+}
+
+.qs-nav-wrapper ul:after {
+	content: ""; display: table; clear: both;
+}
+
+.qs-nav-wrapper ul li {
+	float: left;
+}
+
+.qs-nav-wrapper ul li a {
+	font-size: 16px; font-family: OptimaBI, sans-serif; text-transform: uppercase; padding: 0 10px; padding: 15px; display: block; color: #FFF;
+}
+
+.qs-header-wrapper.fixed .qs-nav-wrapper ul li a {
+    padding: 0 15px; line-height: 56px;
+}
+
+.qs-header-social {
+	position: absolute; top: 8px; left: 0;
+}
+
+.qs-header-wrapper.fixed .qs-header-social {
+    display: none;
+}
+
+.qs-list-social {
+	margin: 0; padding: 0; list-style: none; display: inline-block;
+}
+
+.qs-list-social:after {
+	content: ""; display: table; clear: both;
+}
+
+.qs-list-social li {
+	float: left; margin: 0 20px 0 0; line-height: 20px;
+}
+
+.qs-list-social li:last-child {
+	margin: 0;
+}
+
+.qs-list-social a {
+	color: #FFF; display: block; font-size: 17px;
+}
+
+.qs-quick-link {
+	position: absolute; top: 8px; right: 0;
+}
+
+.qs-header-wrapper.fixed .qs-quick-link {
+    position: relative; float: right; top: 0;
+}
+
+.qs-list-link {
+	margin: 0; padding: 0; list-style: none; display: inline-block;
+}
+
+.qs-list-link:after {
+	content: ""; display: table; clear: both;
+}
+
+.qs-list-link li {
+	float: left; margin: 0 20px 0 0; line-height: 20px;
+}
+
+.qs-header-wrapper.fixed .qs-list-link li {
+    line-height: 56px;
+}
+
+.qs-list-link li:last-child {
+	margin: 0;
+}
+
+.qs-list-link li a {
+	font-size: 14px; font-family: OptimaBI, sans-serif; text-transform: uppercase; display: block; color: #FFF;
+}
+
+.qs-list-link li i {
+	font-size: 16px; color: #FFF;
+}
+
+.qs-icon-search i {
+	cursor: pointer;
+}
+
+.qs-quantity-cart {
+	display: inline-block; height: 18px; width: 18px; font-size: 11px; line-height: 19px; position: relative; top: -1px; margin: 0 0 0 3px; color: #FFF; background: #3baef7 none; text-align: center; border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%;
+}
+
+.qs-search-bar {
+	background: #1e1e1e none; padding: 10px 0; display: none;
+}
+
+.qs-search-form {
+	text-align: right;
+}
+
+.qs-search-form form {
+	display: inline-block;
+}
+
+.qs-search-form input[type="text"] {
+	height: 40px; line-height: 38px; border: 1px solid #d7d7d7; border-right: none; float: left; background: #FFF none; padding: 0 10px; min-width: 300px;
+}
+
+.qs-search-form button {
+	height: 40px; line-height: 38px; border: 1px solid #d7d7d7; border-left: none; float: left; background: #FFF none; padding: 0 10px;
+}
+
+.qs-search-form:after {
+	content: ""; clear: both; display: table;
+}
+
+.qs-footer-wrapper {
+	background: #000 none; padding: 30px 0 10px;
+}
+
+.qs-logo-footer {
+	text-align: center; margin: 0 0 20px;
+}
+
+.qs-logo-footer a {
+	display: inline-block; line-height: 0;
+}
+
+.qs-footer-social {
+	text-align: center; margin: 0 0 10px;
+}
+
+.qs-nav-footer {
+	text-align: center;
+}
+
+.qs-nav-footer ul {
+	margin: 0; padding: 0; list-style: none; display: inline-block;
+}
+
+.qs-nav-footer ul:after {
+	content: ""; display: table; clear: both;
+}
+
+.qs-nav-footer ul li {
+	float: left;
+}
+
+.qs-nav-footer ul li a {
+	font-size: 16px; font-family: OptimaBI, sans-serif; text-transform: uppercase; padding: 0 10px; padding: 15px; display: block; color: #FFF;
+}
+
+.qs-copyrights {
+	text-align: center; color: #b2b2b2; font-size: 12px; font-family: Arial, sans-serif; font-weight: 700;
+}
+
+.qs-logo-small {
+	line-height: 0; text-align: center;
+}
+
+.qs-logo-small img {
+	position: relative; top: -41px;
+}
+
+.qs-page-container {
+	background: #FFF none;
+}
+
+.qs-title-page {
+	background: #FFF none; padding: 70px 0 65px;
+}
+
+.qs-title-discover {
+	margin: 0 0 40px;
+}
+
+.qs-title-discover span {
+	display: block; text-align: center;
+}
+
+.qs-title-discover .qs-small-title {
+	font-size: 18px; color: #000; text-transform: uppercase; font-family: OptimaBI, sans-serif;
+}
+
+.qs-title-discover .qs-lager-title {
+	font-size: 50px; line-height: 50px; font-family: WolfsburgR, sans-serif; color: #000; text-transform: uppercase;
+}
+
+.qs-col-discover {
+	margin: 0 0 30px; position: relative; overflow: hidden;
+}
+
+.qs-col-discover a {
+	display: block;
+}
+
+.qs-img-discover {
+	line-height: 0; text-align: center;
+}
+
+.qs-desc-col {
+	position: absolute; top: 80%; left: 0; width: 100%; height: 100%; padding: 16px 15px; display: block; background: rgba(0, 0, 0, 0.5); color: #FFF; transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease;
+}
+
+.qs-text-col {
+	font-family: OptimaBI, sans-serif; font-size: 25px; text-transform: uppercase; text-align: center; display: block; line-height: 25px; margin: 0 0 15px;
+}
+
+.qs-content-col {
+	font-family: Optima, sans-serif; font-size: 17px; text-align: center; display: block; line-height: 22px;
+}
+
+.qs-col-discover:hover .qs-desc-col {
+	top: 0;
+}
+
+.qs-advertisement {
+	margin: 20px 0 50px; position: relative;
+}
+
+.qs-img-advertisement {
+	line-height: 0;
+}
+
+.qs-desc-advertisement {
+	position: absolute; top: 0; left: 0; width: 100%; padding: 0 0 0 190px; display: table;
+}
+
+.qs-text-advertisement {
+	display: table-cell; vertical-align: middle;
+}
+
+.qs-text-advertisement p {
+	font-family: Optima, sans-serif; font-size: 17px; color: #FFF; line-height: 30px; margin: 0 0 25px;
+}
+
+.qs-text-advertisement a {
+	height: 46px; line-height: 46px; padding: 0 40px; display: inline-block; background: #3baef7 none; color: #FFF; text-align: center; font-size: 16px; text-transform: uppercase; font-family: OptimaBI, sans-serif;
+}
+
+.qs-page-title{
+	font-family: WolfsburgR, sans-serif; font-size: 60px; text-align: center; color: #000; margin: 0 0 15px; line-height: 60px; text-transform: uppercase;
+}
+
+.qs-desc-14 {
+	font-size: 14px; text-align: center; color: #959595; line-height: 24px; margin: 0 0 5px;
+}
+
+.qs-desc-16 {
+	font-size: 16px; color: #000; font-family: OptimaBI, sans-serif; text-align: center; text-transform: uppercase; margin: 0 0 50px;
+}
+
+.schedule-page, .login-page, .contact-page, .create-page, .myaccount-page{
+	padding: 70px 0;
+}
+
+.qs-form-schedule form {
+	width: 50%; margin: 0 auto;
+}
+
+.qs-form-schedule input[type="text"], .qs-form-schedule input[type="email"], .qs-col-login-page input[type="text"], .qs-col-login-page input[type="email"] {
+	height: 40px; line-height: 38px; border: 1px solid #d7d7d7; background: #FFF none; box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -webkit-box-shadow: none; border-radius: 0; -o-border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
+}
+
+.qs-form-schedule .input-group-addon {
+	color: #3baef7; background: #FFF none; border-radius: 0; -o-border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
+}
+
+.qs-form-schedule textarea {
+	line-height: 38px; border: 1px solid #d7d7d7; background: #FFF none; box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -webkit-box-shadow: none; border-radius: 0; -o-border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
+}
+
+.qs-form-schedule label, .qs-col-login-page label, .qs-col-contact-page label , .qs-col-create-page label, .qs-col-myaccount-page label{
+	font-size: 14px; font-family: OptimaBI, sans-serif; color: #000; text-transform: uppercase; font-weight: 400;
+}
+
+.qs-required {
+	color: #e01919;
+}
+
+.qs-form-schedule .qs-button-form {
+	margin: 10px 0 0;
+}
+
+.qs-form-schedule button, .qs-button-login button , .qs-button-createacc button {
+	display: block; font-size: 16px; color: #FFF; font-family: OptimaBI, sans-serif; text-align: center; background: #3baef7 none; line-height: 48px; width: 100%; border: none; text-transform: uppercase;
+}
+
+.qs-title-page .qs-page-title {
+	margin: 0;
+}
+
+.qs-intro-about-us {
+	background: #FFF url('../images/intro_about.jpg') no-repeat center center; background-size: cover; min-height: 674px; position: relative;
+}
+
+.qs-intro-about-us:before {
+	content: ""; background: transparent url('../images/about_person.png'); background-size: cover; width: 591px; height: 766px; position: absolute; top: -24px; left: 0; display: block;
+}
+
+.qs-intro-content-about {
+	padding: 30px 30px 0;
+}
+
+.qs-img-intro-about {
+	line-height: 0; text-align: center; margin: 0 0 30px;
+}
+
+.qs-desc-18 {
+	font-family: OptimaBI, sans-serif; text-transform: uppercase; color: #000; text-align: center;
+}
+
+.qs-desc-50 {
+	font-size: 50px; color: #000; text-align: center; line-height: 50px; font-family: WolfsburgR, sans-serif; text-transform: uppercase;
+}
+
+.qs-intro-content-about .qs-desc-50 {
+	margin: 0 0 25px;
+}
+
+.qs-desc-normal-16 {
+	font-size: 16px; color: #000; text-align: center; line-height: 24px;
+}
+
+.qs-statement {
+	margin: 0 0 80px;
+}
+
+.qs-intro-statement {
+	margin: 60px 0 50px;
+}
+
+.qs-content-statement .container-fluid {
+	padding-left: 0; padding-top: 0;
+}
+
+.qs-content-statement .row {
+	margin-left: 0; margin-right: 0;
+}
+
+.qs-content-statement .qs-col-statement {
+	padding-left: 0; padding-right: 0;
+}
+
+.qs-content-statement-wrapper {
+	width: 50%; display: table;
+}
+
+.qs-container-statement {
+	display: table-cell; vertical-align: middle;
+}
+
+.qs-content-statement-wrapper.qs-statement-right {
+	margin-left: 10%; text-align: left;
+}
+
+.qs-content-statement-wrapper.qs-statement-right .qs-desc-normal-16 {
+	text-align: left;
+}
+
+.qs-number-statement {
+	font-size: 80px; color: #e4e4e4; font-family: WolfsburgR, sans-serif; line-height: 60px; margin: 0 0 40px; text-transform: uppercase;
+}
+
+.qs-title-statement {
+	font-size: 30px; font-family: OptimaBI, sans-serif; color: #000; text-transform: uppercase; margin: 0 0 30px;
+}
+
+.qs-content-statement-wrapper.qs-statement-left {
+	margin-left: 40%; text-align: right;
+}
+
+.qs-content-statement-wrapper.qs-statement-left .qs-desc-normal-16 {
+	text-align: right;
+}
+
+.qs-col-statement-img {
+	line-height: 0; display: block;
+}
+
+.qs-testimonial {
+	padding: 50px 0 60px; background: #f2f2f2 none; margin: ;
+}
+
+.qs-testimonial .qs-desc-50 {
+	margin: 0 0 40px;
+}
+
+.qs-img-testimonial {
+	line-height: 0; text-align: center; margin: 0 0 40px;
+}
+
+.qs-img-testimonial img {
+	display: inline; border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%;
+}
+
+.qs-title-testimonial {
+	font-family: WolfsburgR, sans-serif; font-size: 25px; text-align: center; color: #000; text-transform: uppercase; margin: 0 0 30px; position: relative; display: block;
+}
+
+.qs-col-testimonial .qs-desc-normal-16:after {
+	content: '"'; font-family: 'Open Sans', sans-serif; font-size: 50px; color: #3baef7; width: 100%; text-align: center; position: relative; display: block; margin: 20px 0 0;
+}
+
+.qs-testimonial .bx-controls {
+	position: relative; text-align: center; margin: 50px 0 0;
+}
+
+.qs-testimonial .bx-controls-direction {
+	display: inline-block;
+}
+
+.qs-testimonial .bx-controls-direction:after {
+	content: ""; clear: both; display: table;
+}
+
+.qs-testimonial .bx-wrapper .bx-controls-direction a {
+	display: block; float: left; width: 35px; height: 35px; position: relative; left: 0; top: 0;
+}
+
+.qs-testimonial .bx-wrapper .bx-prev {
+	background: transparent url('../images/arrow_left.jpg') no-repeat center center; margin-right: 10px;
+}
+
+.qs-testimonial .bx-wrapper .bx-next {
+	background: transparent url('../images/arrow_right.jpg') no-repeat center center;
+}
+
+.qs-what-bodyscan {
+	background: transparent url('../images/what_is_body_scan.jpg') no-repeat center center; background-size: cover; min-height: 512px; padding: 50px 0 0;
+}
+
+.qs-what-bodyscan-content, .qs-intro-why-using-bodyscan {
+	width: 80%; margin: 0 auto;
+}
+
+.qs-what-bodyscan-content .qs-desc-50, .qs-intro-why-using-bodyscan .qs-desc-50 {
+	margin: 0 0 5px; color: #FFF;
+}
+
+.qs-what-bodyscan-content .qs-desc-normal-16, .qs-intro-why-using-bodyscan .qs-desc-normal-16, .qs-col-why-bodyscan-wrapper .qs-desc-normal-16 {
+	color: #FFF;
+}
+
+.qs-why-using-bodyscan {
+	background: transparent url('../images/why_body_scan.jpg') no-repeat center center; background-size: cover; padding: 50px 0 40px;
+}
+
+.qs-col-why-using-bodyscan {
+	margin: 20px 0 0;
+}
+
+.qs-col-why-bodyscan-wrapper {
+	padding: 50px 30px 40px; border: 1px solid #FFF; border-top: none; position: relative; margin: 70px 0 0;
+}
+
+.qs-img-why-bodyscan {
+	position: absolute; left: 0; top: -49px; line-height: 0; text-align: center; width: 100%;
+}
+
+.qs-title-why-bodyscan {
+	font-size: 25px; color: #3baef7; font-family: OptimaBI, sans-serif; margin: 0 0 15px; text-transform: uppercase; text-align: center;
+}
+
+.qs-button-learn-more {
+	margin: 40px 0 0;
+}
+
+.qs-button-learn-more a {
+	display: inline-block; background: #3baef7 none; line-height: 48px; padding: 0 30px; font-size: 16px; color: #FFF; font-family: OptimaBI, sans-serif; text-transform: uppercase;
+}
+
+.qs-why-using-bodyscan .qs-button-learn-more, .qs-use-bodyscan .qs-button-learn-more {
+	text-align: center;
+}
+
+.qs-use-bodyscan {
+	padding: 50px 0;
+}
+
+.qs-use-bodyscan .qs-desc-50 {
+	margin: 0 0 45px;
+}
+
+.qs-col-use-bodyscan {
+	margin: 0 0 30px;
+}
+
+.qs-img-use-bodyscan {
+	text-align: center; line-height: 0; margin: 0 0 20px;
+}
+
+.qs-title-use-bodyscan {
+	font-size: 25px; color: #000; font-family: OptimaBI, sans-serif; text-align: center; text-transform: uppercase; margin: 0 0 20px;
+}
+
+.qs-col-use-bodyscan .qs-desc-normal-16 {
+	color: #4a4a4a;
+}
+
+.qs-product-bodyscan {
+	background: transparent url('../images/footer_body_scan.jpg') no-repeat center center; background-size: cover; padding: 60px 0;
+}
+
+.qs-product-bodyscan-wrapper .qs-desc-50 {
+	text-align: left; color: #FFF; margin: 0 0 15px; line-height: 60px;
+}
+
+.qs-product-bodyscan-wrapper .qs-desc-normal-16 {
+	text-align: left; color: #FFF; max-width: 40%;
+}
+
+.qs-banner-page {
+	min-height: 350px; background: transparent;
+}
+
+.login-page, .create-page, .contact-page, .myaccount-page .qs-page-title {
+	margin: 0 0 60px;
+}
+
+.qs-wolfsburg-25 {
+	font-size: 25px; font-family: WolfsburgR, sans-serif; color: #000; line-height: 26px; text-transform: uppercase; margin: 0 0 3px;
+}
+
+.qs-col-login-page .qs-desc-normal-14 {
+	color: #959595; margin: 0 0 20px;
+}
+
+.qs-list-16 {
+	color: #000; font-size: 16px; font-family: OptimaBI, sans-serif; text-transform: uppercase; margin: 0; padding: 0; list-style: none;
+}
+
+.qs-list-16 li {
+	padding-left: 30px; position: relative; margin: 0 0 10px;
+}
+
+.qs-list-16 li:last-child {
+	margin: 0;
+}
+
+.qs-list-16 li:before {
+	content: "\f178"; font-family: FontAwesome; position: absolute; left: 0; top: 0; display: block; color: #3baef7;
+}
+
+.qs-title-social-login {
+	margin: 40px 0 3px;
+}
+
+.qs-login-social {
+	list-style: none; margin: 30px 0 0; padding: 0;
+}
+
+.qs-login-social:after {
+	content: ""; clear: both; display: table;
+}
+
+.qs-login-social li {
+	float: left; margin: 0 25px 0 0;
+}
+
+.qs-login-social li:last-child {
+	margin: 0;
+}
+
+.qs-login-social li a {
+	font-size: 24px; line-height: 24px; color: #000;
+}
+
+.qs-button-create {
+	position: absolute; bottom: 0; left: 0; width: 100%;
+}
+
+.qs-button-create a {
+	display: block; line-height: 46px; border: 1px solid #3baef7; text-align: center; font-family: OptimaBI, sans-serif; font-size: 16px; color: #3baef7;
+}
+
+.qs-button-login {
+	margin: 50px 0 0;
+}
+
+.qs-col-login, .qs-col-contact, .qs-col-create{
+	position: relative;
+}
+
+.qs-line-col:before {
+	content: ""; background: #d7d7d7 none; width: 1px; height: 100%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto; display: block;
+}
+
+/* start Hungvt 03/08/2016*/
+.qs-header-address {margin-top: 20px}
+.qs-header-address p{
+	font-size: 14px; font-family: OptimaBI, sans-serif; color: #000; font-weight: 400;
+}
+.qs-header-address p i{ 
+	min-width: 20px; }
+/* create */
+.qs-col-create-page .label-gender{ text-transform: none; font-size: 16px; color: #000; font-family: Optima;}
+.qs-col-create-page .label-nomal{ text-transform: none; font-size: 14px; color: #000; font-family: Optima;}
+.qs-button-createacc{margin: 50px 0 0;
+}
+.qs-createacc-social {
+	list-style: none; margin: 30px 0 0; padding: 0;
+}
+
+.qs-createacc-social:after {
+	content: ""; clear: both; display: table;
+}
+
+.qs-createacc-social li {
+	float: left; margin: 0 25px 0 0;
+}
+
+.qs-createacc-social li:last-child {
+	margin: 0;
+}
+.qs-col-create-page label {
+	font-size: 14px; font-family: OptimaBI, sans-serif; color: #000; font-weight: 400;
+}
+.qs-createacc-social li a {
+	font-size: 24px; line-height: 24px; color: #000;
+}
+.qs-createacc-social li a:hover i{color: #3baef7}
+.qs-page-title-myacch2, .qs-page-title-myacch3 {
+	font-family: WolfsburgR, sans-serif; color: #000; margin: 0 0 15px; text-transform: uppercase;
+}
+.qs-page-title-myacch2{font-size: 25px; line-height: 25px;}
+.qs-page-title-myacch3{font-size: 18px; line-height: 18px; padding-top: 30px}
+/* MY ACC*/
+.qs-myaccount-order, .qs-col-myaccount-page .label-nomal{text-transform: none;font-size: 14px;color: #000;font-family: Optima;font-weight: bold;}
+.qs-col-myaccount-page .label-genger{ text-transform: none; font-size: 16px; color: #000; font-family: Optima;}
+.qs-myaccount-order {padding-bottom: 20px}
+.qs-end{margin-bottom: 20px;}
+.qs-end p{
+	font-family: OptimaBI; color: #000; margin: 0 0 15px; text-transform: uppercase; font-size: 13px; line-height: 13px;  text-decoration: underline;
+}
+.qs-page-title-myacc{
+	font-family: WolfsburgR, sans-serif; margin: 0; text-transform: uppercase; font-size: 18px; line-height: 18px; color: #FFF ;background: black; padding: 20px 0px 20px 30px;
+}
+.col-sm-6 my-create{padding-left: 0px;}
+.qs-myaccount-title ul{ list-style-type: none; padding: 0}
+.qs-myaccount-title ul li{background: #f6f6f6;height: 50px;border-bottom: 1px solid #cccccc;border-right: 1px solid #cccccc;border-left: 1px solid #cccccc;padding-left: 30px;}
+.qs-myaccount-title ul li a{font-size: 16px;font-family: OptimaBI, sans-serif;color: #000;/* padding: 0px 30px; */line-height: 50px;}
+.qs-myaccount-title ul li:hover{background: #fff}
+.qs-myaccount-title ul li:hover a{color: #3baef7}
+.qs-button-myaccount{border-top: 1px solid #cccccc}
+.qs-button-myaccount ul{list-style-type: none; padding: 0; float: left; margin: 20px 0px}
+.qs-button-myaccount ul li{ float: left; background: #d7d7d7; margin-right: 20px; min-width: 135px; min-height: 50px; text-align: center;}
+.qs-button-myaccount ul li a{ color: #fff; font-size: 16px; line-height: 50px; font-family: OptimaBI, sans-serif; text-transform: uppercase; font-weight: 400;}
+.qs-button-myaccount ul li:hover{background: #3baef7;}
+.qs-myaccount-title {padding-bottom: 10px;}
+.qs-order-myaccount{padding-left: 30px; background: #f6f6f6; border: 1px solid #ccc}
+.qs-title-mcorder{padding: 25px 0}
+.qs-order-myaccount p{padding-top: 20px;}
+.qs-order-myaccount .view-order{font-family: OptimaBI;font-size: 16px; color: #3baef7; text-decoration: underline;}
+.qs-order-myaccount .qs-myacc-add-cart{max-width: 210px; background: #3baef7;padding: 10px 0; font-family: OptimaBI; text-align: center;}
+.qs-order-myaccount .add-cart{font-size: 14px; text-transform: uppercase; color: #fff;  background: #3baef7; }
+.qs-myacc-add-cart{margin: 20px 0 30px 0px;}
+.qs-col-myaccount-page .qs-del-myacc-address{
+	font-size: 14px;
+	font-family: OptimaBI, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-decoration: underline;
+	color: red;
+	/* padding-top: 30px; */
+}
+.qs-col-myaccount-page .qs-del-myacc-address span{padding-left: 9px}
+@media only screen and (max-width: 480px) {
+	.qs-button-myaccount ul li {
+	    width: 100%;
+	    margin: 0 0 10px 0;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.qs-del-address-myacc{
+		padding-left: 0px;
+		padding-top: 30px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.qs-myacc-add-cart{
+		width: 100%;
+	}
+}
+/*my dashboard*/
+.qs-page-title-mydash{padding-top: 30px;font-family: WolfsburgR, sans-serif;color: #000;margin: 0 0 15px;text-transform: uppercase;font-size: 25px;line-height: 25px;}
+.qs-dash-contact-info{border: 1px solid #cccccc; padding: 20px;}
+.qs-dash-contact-info .view-order{font-family: OptimaBI;font-size: 16px; color: #3baef7; text-decoration: underline;}
+.qs-dash-contact-info{ margin-bottom: 30px }
+.col-sm-6.qs-dash-l{padding-left: 0px;}
+.col-sm-6.qs-dash-r{padding-right: 0px;}
+.qs-product-design ul{list-style-type: none; float: left; padding: 0}
+.qs-product-design ul li{float: left; margin-right: 20px; text-align: center; border: 1px solid #ccc; min-height: 170px; min-width: 140px; line-height: 170px}
+.qs-product-design ul li:last-child{padding-right: 0px; border: none; min-width: 30px;margin-right: 0px}
+.qs-product-design ul li:first-child{padding-left: 0px; border: none; min-width: 30px}
+@media only screen and (max-width: 640px) {
+	.col-sm-6.qs-dash-l{padding-left: 15px;}
+	.col-sm-6.qs-dash-r{padding-right: 15px;}
+}
+.qs-title-tbl{font-family: OptimaBI, sans-serif; font-size: 16px; color: #000; text-transform: uppercase;}
+.qs-list-tbl{font-family: Optima, sans-serif; font-size: 14px; color: #000;}
+.qs-detail-order{font-family: OptimaBI, sans-serif; font-size: 14px; text-decoration: underline; text-transform: uppercase;}
+#wrapper {
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.row {
+	margin: 0;
+}
+.clear{clear: both;}
+/* end Hungvt */
+
